@@ -10,21 +10,7 @@ header{
 nav{
     overflow: auto;
     padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-#main-menu{
-    display: flex;
-
-}
-
-#main-menu li{
-    list-style: none;
-    padding-right: 2rem;
-
+    
 }
 
 body{
@@ -36,21 +22,14 @@ main{
 
 }
 
-article{
-    flex-basis: 250px;
-    flex-grow: 1;
-    border: 1px solid #d9d9d9;
-    padding: 1rem;
-}
-
 aside{
 
 }
 
 footer{
     background-color: rgb(80, 80, 80);
-    color: rgb(228, 225, 225);
-    padding: 3rem 2rem;
+    color: rgb(243, 243, 243);
+    padding: 2rem 2rem;
 }
 
 /* Størrelse*/
@@ -64,37 +43,25 @@ img{
 
 #front-page-container{
     display: grid;
-    grid-template-areas:"header"
-                        "main"
-                        "aside"
-                        "footer";
-    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas:"header header header"
+                        ". main  ."
+                        "footer footer footer";
+    grid-template-columns:  1fr 4fr 1fr ;
 }
 
 header{
     grid-area: header;
-    grid-column-start: 1;
-    grid-column-end: 6;
-    grid-row-start: 1;
-    grid-row-end: 2;
+
 }
 
 nav{
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 3;
-    grid-row-end: 4;
+    grid-area: header;
+    
+
 }
 
 main{
     grid-area: main;
-    grid-column-start: 2;
-    grid-column-end: 5;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
 
 }
 
@@ -105,9 +72,51 @@ aside{
 
 footer{
     grid-area: footer;
-    grid-column-start: 1;
-    grid-column-end: -1;
+
 
 }
 
 /* flex box */
+
+nav{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+#main-menu{
+    display: flex;
+
+}
+
+#main-menu li{
+    list-style: none;
+    padding-right: 2rem;
+
+}
+
+article{
+    flex-basis: 100px;
+    flex-grow: 1;
+    border: 1px solid #d9d9d9;
+    padding: 1rem;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+#more-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5px;
+}
