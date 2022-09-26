@@ -64,10 +64,10 @@ img{
 
 #front-page-container{
     display: grid;
-    grid-template-areas:"header"
-                        "main"
+    grid-template-areas:"header header header"
+                        "main main main"
                         "aside"
-                        "footer";
+                        "footer footer footer";
     grid-template-columns: 1fr 4fr 1fr;
 }
 
