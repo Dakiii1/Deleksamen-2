@@ -65,6 +65,10 @@ main{
 
 }
 
+form{
+    grid-area: main;
+}
+
 aside{
     grid-area: aside;
 
@@ -100,6 +104,11 @@ main{
     list-style: none;
     padding-right: 2rem;
 
+}
+
+form{
+    display: flex;
+    width: 100%;
 }
 
 article{
