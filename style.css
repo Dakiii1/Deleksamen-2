@@ -44,16 +44,9 @@ img{
 #front-page-container{
     display: grid;
     grid-template-areas:"header header header"
-<<<<<<< HEAD
                         ". main  ."
                         "footer footer footer";
     grid-template-columns:  1fr 4fr 1fr ;
-=======
-                        "main main main"
-                        "aside"
-                        "footer footer footer";
-    grid-template-columns: 1fr 4fr 1fr;
->>>>>>> 1e7f1636cc302481841bd28ecfc23794874848a5
 }
 
 header{
