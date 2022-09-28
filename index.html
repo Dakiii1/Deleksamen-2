@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="nb">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-        <link href="fonter/css/fontawesome.css" rel="stylesheet">
-        <link href="fonter/css/brands.css" rel="stylesheet">
-        <link href="fonter/css/solid.css" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <title>Forside med masse info og valg</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link href="fonter/css/fontawesome.css" rel="stylesheet">
+    <link href="fonter/css/brands.css" rel="stylesheet">
+    <link href="fonter/css/solid.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Forside med masse info og valg</title>
+</head>
+
 <body>
     <div id="front-page-container">
         <header>
-            <nav>
-                <h2><a href="index.html">Logo</a></h2>
+            <nav class="nav-menu">
+                <h2><a href="index.html" id="logo">Logo</a></h2>
 
                 <ul id="main-menu">
                     <li><a href="index.html">Hjem</a></li>
@@ -26,46 +28,44 @@
                 </ul>
             </nav>
         </header>
-    <main>
-        <article id="article-1">
-            <img src="bildebank/bildebank/200x300.png" alt="bildeholder">
-            <h3>UU vs SEO</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, officia?</p>
-            <a href="uuvsseo.html">Les mer</a>
-        </article>
-        <article id="article-2">
-            <img src="bildebank/bildebank/200x300.png" alt="bildeholder">
-            <h3>CMS</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, odio!</p>
-            <a href="cms.html">Les mer</a>
-        </article>
-        <article id="article-3">
-            <img src="bildebank/bildebank/200x300.png" alt="bildeholder">
-            <h3>Analyse</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut, sunt!</p>
-            <a href="analyse.html">Les mer</a>
-        </article>
-        <form>
-            <fieldset>
-                <legend>Kontakt oss</legend>
-                <label for="kommentar">Kommentar</label>
-                <textarea id="kommentar" name="kommentar"></textarea>
-                <input type="submit" value="Send">
-            </fieldset>
-        </form>
-    </main>
-    <aside>
+        <main>
+            <div class="intro">
+                <h2>Velkommen til min nettside</h2>
+                <p>Hei og velkommen igjen til min side som jeg bruker for å lære!</p>
+                <a href="kontaktoss.html" id="kontakt">Kontakt oss</a>
+            </div>
 
-    </aside>
-    <footer>
-        <p>Copyright 2022 XD</p>
+            <div class="artikler">
+            <article id="article-1">
+                <img src="bildebank/bildebank/200x300.png" alt="bildeholder">
+                <h3>UU vs SEO</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, officia?</p>
+                <a href="uuvsseo.html">Les mer</a>
+            </article>
+            <article id="article-2">
+                <img src="bildebank/bildebank/200x300.png" alt="bildeholder">
+                <h3>CMS</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, odio!</p>
+                <a href="cms.html">Les mer</a>
+            </article>
+            <article id="article-3">
+                <img src="bildebank/bildebank/200x300.png" alt="bildeholder">
+                <h3>Analyse</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut, sunt!</p>
+                <a href="analyse.html">Les mer</a>
+            </article>
+        </div>
+        </main>
+        <footer>
+            <p>Copyright 2022 XD</p>
 
-        <ul id="more-info">
-            <li><a href="kontaktoss.html">Kontakt oss</a></li>
-            <li>E-post til: heiduersøt@søt.no</li>
-            <li>Ring oss: 00 00 00 00 eller SMS 1234</li>
-        </ul>
-    </footer>
+            <ul id="more-info">
+                <li><a href="kontaktoss.html">Kontakt oss</a></li>
+                <li>E-post til: heiduersøt@søt.no</li>
+                <li>Ring oss: 00 00 00 00 eller SMS 1234</li>
+            </ul>
+        </footer>
     </div>
 </body>
+
 </html>

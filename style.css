@@ -1,129 +1,124 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+
+* {
     box-sizing: border-box;
 }
-/*style + farge*/
-header{
+
+header {
     background-image: url(bildebank/bildebank/webstacks-WbOR54pzvLM-unsplash.jpg);
     background-size: auto;
+    grid-area: header;
 }
 
-nav{
+nav {
     overflow: auto;
     padding: 2rem;
-    
-}
-
-body{
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
-}
-
-main{
-
-}
-
-aside{
-
-}
-
-footer{
-    background-color: rgb(80, 80, 80);
-    color: rgb(243, 243, 243);
-    padding: 2rem 2rem;
-}
-
-/* Størrelse*/
-
-img{
-    width: 100%;
-}
-
-
-/* Grid Area*/
-
-#front-page-container{
-    display: grid;
-    grid-template-areas:"header header header"
-                        ". main  ."
-                        "footer footer footer";
-    grid-template-columns:  1fr 4fr 1fr ;
-}
-
-header{
+    font-weight: bold;
+    color: black;
     grid-area: header;
-
-}
-
-nav{
-    grid-area: header;
-    
-
-}
-
-main{
-    grid-area: main;
-
-}
-
-form{
-    grid-area: main;
-}
-
-aside{
-    grid-area: aside;
-
-}
-
-footer{
-    grid-area: footer;
-
-
-}
-
-/* flex box */
-
-nav{
     justify-content: center;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-main{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
+.nav-menu li a, 
+.nav-menu li a:active 
+.nav-menu li a:visited {
+    text-decoration: none;
+    color: black;
+    
 }
 
-#main-menu{
-    display: flex;
-
+.nav-menu li a:hover,#logo:hover{
+    color: blueviolet;
 }
 
-#main-menu li{
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+#front-page-container {
+    display: grid;
+    grid-template-areas: "header header header"
+        ". main  ."
+        "footer footer footer";
+    grid-template-columns: 1fr 4fr 1fr;
+    background-image: url(bildebank/bildebank/webstacks-WbOR54pzvLM-unsplash.jpg);
+    background-size: auto;
+}
+
+main {
+    margin-top: 10px;
+    background-color: white;
+    grid-area: main;
+}
+
+#main-menu {
+    display: flex;
+}
+
+#main-menu li {
     list-style: none;
     padding-right: 2rem;
 
 }
 
-form{
-    display: flex;
-    width: 100%;
+#logo{
+    font-family: 'Lobster', cursive;
+    font-size: 4rem;
+    text-decoration: none;
+    color: black;
 }
 
-article{
+article {
     flex-basis: 100px;
     flex-grow: 1;
     border: 1px solid #d9d9d9;
     padding: 1rem;
 }
 
-footer{
+.artikler{
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
-#more-info{
+#kontakt{
+    background-color: grey;
+    color: whitesmoke;
+    padding: 1rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    margin: 1rem 0 1rem 1rem;
+    display: inline-block;
+}
+
+.intro{
+    padding: 2rem;
+}
+
+footer {
+    background-color: rgb(80, 80, 80);
+    color: rgb(243, 243, 243);
+    padding: 1rem 1rem;
+    margin: 2rem 0 0 0;
+    grid-area: footer;
+    display: flex;
+    justify-content: space-between
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+#more-info {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
