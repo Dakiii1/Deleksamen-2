@@ -23,29 +23,29 @@ nav {
     align-items: center;
 }
 
-.nav-menu li a, 
-.nav-menu li a:active 
-.nav-menu li a:visited {
+.nav-menu li a,
+.nav-menu li a:active .nav-menu li a:visited {
     text-decoration: none;
     color: black;
-    
+
 }
 
-.nav-menu li a:hover,#logo:hover{
+.nav-menu li a:hover,
+#logo:hover {
     color: blueviolet;
 }
 
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    
+
 }
 
 #front-page-container {
     display: grid;
-    grid-template-areas: "header header header"
-        ". main  ."
-        "footer footer footer";
+    grid-template-areas:"header header header"
+                        ". main  ."
+                        "footer footer footer";
     grid-template-columns: 1fr 4fr 1fr;
     background-image: url(bildebank/bildebank/webstacks-WbOR54pzvLM-unsplash.jpg);
     background-size: auto;
@@ -67,7 +67,7 @@ main {
 
 }
 
-#logo{
+#logo {
     font-family: 'Lobster', cursive;
     font-size: 4rem;
     text-decoration: none;
@@ -81,13 +81,13 @@ article {
     padding: 1rem;
 }
 
-.artikler{
+.artikler {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
 }
 
-#kontakt{
+#kontakt {
     background-color: grey;
     color: whitesmoke;
     padding: 1rem;
@@ -97,7 +97,7 @@ article {
     display: inline-block;
 }
 
-.intro{
+.intro {
     padding: 2rem;
 }
 
