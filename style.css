@@ -97,11 +97,16 @@ article {
     display: inline-block;
 }
 
-aside{
+aside {
     grid-area: aside;
+    background-color: rgb(243, 243, 234);
+    padding: 1rem;
+    margin: 1rem;
+
+
 }
 
-.intro{
+.intro {
     padding: 2rem;
 }
 
@@ -127,4 +132,40 @@ img {
     flex-direction: column;
     justify-content: space-between;
     gap: 5px;
+}
+
+/*Til CMS sin innholdside*/
+
+#overskrift{
+    text-align: center;
+    padding: 5px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 10px;
+}
+
+.grid-item {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 20px;
+}
+
+.grid-item1{
+    display: flex;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 20px;
+    align-items: center;
+    justify-items: center;
+    
+
+}
+
+  @media only screen and (max-width: 750px) {
+    .grid-container {
+    background-color: grey;
+  }
 }
