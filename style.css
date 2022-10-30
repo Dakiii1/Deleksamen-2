@@ -44,7 +44,7 @@ body {
 #front-page-container {
     display: grid;
     grid-template-areas:"header header header"
-                        ". main  ."
+                        ". main aside"
                         "footer footer footer";
     grid-template-columns: 1fr 4fr 1fr;
     background-image: url(bildebank/bildebank/webstacks-WbOR54pzvLM-unsplash.jpg);
@@ -53,7 +53,7 @@ body {
 
 main {
     margin-top: 10px;
-    background-color: white;
+    background-color: rgb(243, 243, 234);
     grid-area: main;
 }
 
@@ -97,7 +97,11 @@ article {
     display: inline-block;
 }
 
-.intro {
+aside{
+    grid-area: aside;
+}
+
+.intro{
     padding: 2rem;
 }
 
