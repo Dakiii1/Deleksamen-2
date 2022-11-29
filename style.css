@@ -134,6 +134,110 @@ img {
     gap: 5px;
 }
 
+/*Kontakt oss side (fuglte denne videoen for å opprette kontakt oss side: https://www.youtube.com/watch?v=orBQesFBkXg&ab_channel=EasyTutorials)*/
+.innhold{
+    width: 80%;
+    margin: 50px auto;
+}
+
+.skjema{
+    background: #fff;
+    display: flex;
+}
+
+.kontakte{
+    flex-basis: 60%;
+    padding: 40px 60px;
+}
+
+.om-oss{
+    flex-basis: 40%;
+    padding: 40px ;
+    background:rgb(189, 186, 186)
+}
+
+.innhold h1{
+    margin-bottom: 10px;
+}
+.innhold p{
+    margin-bottom: 40px;
+}
+
+.input-rad{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap: 15px;
+
+}
+
+.input-rad .input-gruppe{
+    flex-basis: 45%;  
+}
+
+input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    padding-bottom: 5px;
+}
+
+textarea{
+    width: 100%;
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 10px;
+}
+
+label{
+    margin-bottom: 6px;
+    display: block;
+}
+
+button{
+    width: 25%;
+    height: 25px;
+    border-radius: 5px;
+    margin-top: 5px;
+    box-shadow: 1px 1px 0px 2px rgba(146, 144, 144, 0.8);
+}
+
+.kontakte h3{
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.om.oss h3{
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+dl dt{
+    display: flex;
+    padding-top: 10px;
+}
+
+dl dd{
+    display: flex;
+    padding-top: 5px;
+}
+/* fuglte linken: https://blog.duda.co/responsive-google-maps-for-your-website, for å gjøre kartet responsivt*/
+.kart{
+    overflow: hidden;
+    padding-bottom: 50%;
+    position: relative;
+    height: 0;
+}
+.kart iframe{
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+/*Slutt på kontakt oss side*/
+
 /*Til CMS sin innholdside*/
 
 #overskrift{
@@ -169,3 +273,4 @@ img {
     background-color: grey;
   }
 }
+/*slutt på CMS*/
