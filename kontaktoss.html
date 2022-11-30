@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nb">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:url" content="https://twitter.com/share?ref_src=twsrc%5Etfw">
+    <!--brukt denne linken https://favicon.io/emoji-favicons/japanese-symbol-for-beginner for å genere en ikon-->
+    <link rel="icon" type="image/png" href="/favicon_io/favicon-16x16.png">
 
     <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
     <link href="fonter/css/fontawesome.css" rel="stylesheet">
@@ -35,29 +38,29 @@
             <!--Fulgte det som ble gjort på denne linken for å opprette kontakt oss side: https://www.youtube.com/watch?v=orBQesFBkXg&ab_channel=EasyTutorials -->
             <div class="innhold"></div>
             <h1>Kontakt oss</h1>
-            <p>Legg inn tekst her</p>
+            <p>På denne siden så kan du legge igjen kontakt informasjon og gi oss tilbakemeldinger eller kommentarer på det dere ønsker å informere oss om!</p>
             <div class="skjema">
                 <div class="kontakte">
                     <h3>Legg igjen informasjon</h3>
-                    <form action="">
+                    <form>
 
                         <div class="input-rad">
                             <div class="input-gruppe">
-                                <label for="name">Navn</label>
+                                <label>Navn</label>
                                 <input type="text" placeholder="Jon Are">
                             </div>
                             <div class="input-gruppe">
-                                <label for="phone">Telefon</label>
+                                <label>Telefon</label>
                                 <input type="text" placeholder="+47 093 90 234">
                             </div>
                             <div class="input-gruppe">
-                                <label for="email">Email</label>
+                                <label>Email</label>
                                 <input type="email" placeholder="dattruong@gmail.com">
                             </div>
                         </div>
 
-                        <label for="message">Kommentar</label>
-                        <textarea name="message" id="" cols="30" rows="10" placeholder="Skriv kommentar her..."></textarea>
+                        <label>Kommentar</label>
+                        <textarea name="message" cols="30" rows="10" placeholder="Skriv kommentar her..."></textarea>
 
                         <button type="submit">Send</button>
                     </form>
@@ -65,45 +68,45 @@
                 <!--brukt skole siden sitt kontakt info og lagt til-->
                 <div class="om-oss">
                     <h3>Kontakt oss</h3>
-                    <table>
                         <dl>
-                            <dt>Telefon:</td>
+                            <dt class="fa-solid fa-phone"> Telefon</dt>
                             <dd>Sentralbord: 69 60 80 00</dd>
                         </dl>
                         <dl>
-                            <dt>Postadresse:</dt>
+                            <dt class="fa-solid fa-address-book"> Postadresse:</dt>
                             <dd>Høgskolen i Østfold</dd>
                             <dd>Postboks 700</dd>
                             <dd>1757 Halden</dd>
                         </dl>
                         <dl>
-                            <dt>E-post:</dt>
+                            <dt class="fa-solid fa-envelope"> E-post</dt>
                             <dd>postmottak@hiof.no</dd>
                         </dl>
-                    </table>
                     <div class="kart">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2047.188276120804!2d11.350614616148384!3d59.12925023409061!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464412f0d344246f%3A0x4e47f19c99b253b1!2zSMO4Z3Nrb2xlbiBpIMOYc3Rmb2xk!5e0!3m2!1sno!2sno!4v1669735219943!5m2!1sno!2sno" width="300" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2047.188276120804!2d11.350614616148384!3d59.12925023409061!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464412f0d344246f%3A0x4e47f19c99b253b1!2zSMO4Z3Nrb2xlbiBpIMOYc3Rmb2xk!5e0!3m2!1sno!2sno!4v1669735219943!5m2!1sno!2sno" width="300" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="kartet til høgskole i østfold"></iframe>
                     </div>
                 </div>
             </div>
+        </main>
     </div>
-    </main>
+    
     <footer>
         <p>Copyright 2022 XD</p>
 
         <ul id="more-info">
-            <li><a href="#">Kontakt oss</a></li>
-            <li>E-post til: heipådeg@heihei.no</li>
-            <li>Ring oss: 00 00 00 00 eller SMS 1234</li>
-
+            <li><a href="kontaktoss.html">Kontakt oss</a></li>
+            <li>E-post: postmottak@hiof.no</li>
+            <li>Ring oss: 69 60 80 00</li>
         </ul>
 
-        <div class="ikoner">
-            <i class="fa-brands fa-square-facebook"></i>
+        <div class="dele">
+            <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js"></script>
+            <div id="fb-root"></div>
+            <script async defer crossorigin="anonymous" src="https://connect.facebook.net/nb_NO/sdk.js#xfbml=1&version=v15.0" nonce="Ik1LK05N"></script>
+            <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Del</a>
         </div>
-
-    </footer>
     </div>
+    </footer>
 </body>
 
 </html>

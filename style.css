@@ -120,6 +120,13 @@ footer {
     justify-content: space-between
 }
 
+.fb-share-button{
+    display: flex;
+    justify-content: center;
+    padding-top: 1px;
+
+}
+
 img {
     display: block;
     margin-left: auto;
@@ -222,6 +229,11 @@ dl dd{
     display: flex;
     padding-top: 5px;
 }
+
+.fa-solid fa-phone{
+    display: flex;
+}
+
 /* fuglte linken: https://blog.duda.co/responsive-google-maps-for-your-website, for å gjøre kartet responsivt*/
 .kart{
     overflow: hidden;
@@ -238,7 +250,7 @@ dl dd{
 }
 /*Slutt på kontakt oss side*/
 
-/*Til CMS sin innholdside*/
+/*Til CMS og UU vs SEO sin innholdside*/
 
 #overskrift{
     text-align: center;
