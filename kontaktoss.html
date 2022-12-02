@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:url" content="https://twitter.com/share?ref_src=twsrc%5Etfw">
-    <!--brukt denne linken https://favicon.io/emoji-favicons/japanese-symbol-for-beginner for å genere en ikon-->
-    <link rel="icon" type="image/png" href="/favicon_io/favicon-16x16.png">
 
+    <!--brukt denne linken https://favicon.io/emoji-favicons/japanese-symbol-for-beginner for å genere en ikon-->
+    <link rel="icon" type="image/png" href="./favicon_io/favicon-16x16.png">
     <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
     <link href="fonter/css/fontawesome.css" rel="stylesheet">
     <link href="fonter/css/brands.css" rel="stylesheet">
@@ -15,6 +15,21 @@
     <script src="https://kit.fontawesome.com/a39899b6c2.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Document</title>
+
+    <!--Facebook Cards-->
+    <meta property="og:title" content="Kontakt oss">
+    <meta property="og:type"  content="informasjon">
+    <meta property="og:description"  content="Kontakt oss side hvor det er mulig å legge tilbakemelding eller kommentarer og info om hvordan vi kan kontaktes via telefon, email eller post">
+    <meta property="og:image"  content="https://unsplash.com/photos/idhx-MOCDSk">
+    <meta property="og:url" content="https://itstud.hiof.no/~dattt/eksamen2022/kontaktoss.html">
+
+    <!--Twitter Cards-->
+    <meta name="twitter:card" content="informasjon">
+    <meta name="twitter:title" content="kontakt oss">
+    <meta name="twitter:site" content="https://itstud.hiof.no/~dattt/eksamen2022/kontaktoss.html">
+    <meta name="twitter:description" content="Kontakt oss side hvor det er mulig å legge tilbakemelding eller kommentarer og info om hvordan vi kan kontaktes via telefon, email eller post">
+    <meta name="twitter:image" content="https://unsplash.com/photos/idhx-MOCDSk">
+
 </head>
 
 <body>
@@ -36,11 +51,13 @@
         <main>
             <!--Fulgte det som ble gjort på denne linken for å opprette kontakt oss side: https://www.youtube.com/watch?v=orBQesFBkXg&ab_channel=EasyTutorials -->
             <div class="innhold"></div>
+            <!--bildet hentet fra link https://unsplash.com/photos/idhx-MOCDSk-->
+            <img src="./bilder/miles-burke-idhx-MOCDSk-unsplash.jpg" class="responsive-image-contain" alt="bilde">
             <h1>Kontakt oss</h1>
             <p>På denne siden så kan du legge igjen kontakt informasjon og gi oss tilbakemeldinger eller kommentarer på det dere ønsker å informere oss om!</p>
             <div class="skjema">
-                <div class="kontakte">
-                    <h3>Legg igjen informasjon</h3>
+                <div class="kontakter">
+                    <h2>Legg igjen informasjon</h2>
                     <form>
 
                         <div class="input-rad">
@@ -64,7 +81,7 @@
                         <button type="submit">Send</button>
                     </form>
                 </div>
-                <!--brukt skole siden sitt kontakt info og lagt til-->
+                <!--brukt skole siden sitt kontakt info og lagt til bruk-->
                 <div class="om-oss">
                     <h3>Kontakt oss</h3>
                         <dl>
@@ -90,22 +107,23 @@
     </div>
     
     <footer>
-        <p>Copyright 2022 XD</p>
+        <p>Dat Tan Truong</p>
 
         <ul id="more-info">
             <li><a href="kontaktoss.html">Kontakt oss</a></li>
             <li>E-post: postmottak@hiof.no</li>
             <li>Ring oss: 69 60 80 00</li>
         </ul>
-
+        <!--fuglte lenkene https://publish.twitter.com/# og https://developers.facebook.com/docs/plugins/share-button/ for å opprette dele knapper-->
         <div class="dele">
             <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js"></script>
             <div id="fb-root"></div>
             <script async defer crossorigin="anonymous" src="https://connect.facebook.net/nb_NO/sdk.js#xfbml=1&version=v15.0" nonce="Ik1LK05N"></script>
             <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Del</a>
         </div>
-    </div>
+        </div>
     </footer>
+
 </body>
 
 </html>

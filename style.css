@@ -38,7 +38,7 @@ nav {
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
-
+    font-size: 20px;
 }
 
 #front-page-container {
@@ -46,7 +46,7 @@ body {
     grid-template-areas:"header header header"
                         ". main aside"
                         "footer footer footer";
-    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-columns: 1fr minmax(0, 4fr) 1fr;
     background-image: url(bildebank/bildebank/webstacks-WbOR54pzvLM-unsplash.jpg);
     background-size: auto;
 }
@@ -128,7 +128,7 @@ footer {
 }
 
 img {
-    display: block;
+    display: inline-block;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
@@ -141,6 +141,26 @@ img {
     gap: 5px;
 }
 
+h3{
+    text-align: center;
+}
+
+.responsive-image{
+    object-fit: cover;
+}
+
+.responsive-image-contain{
+    object-fit: contain;
+}
+
+.container{
+    display: flex;
+}
+
+p{
+    line-height: 150%;
+}
+
 /*Kontakt oss side (fuglte denne videoen for å opprette kontakt oss side: https://www.youtube.com/watch?v=orBQesFBkXg&ab_channel=EasyTutorials)*/
 .innhold{
     width: 80%;
@@ -150,6 +170,11 @@ img {
 .skjema{
     background: #fff;
     display: flex;
+}
+@media only screen and (max-width: 750px) {
+    .skjema {
+    flex-direction: column;
+  }
 }
 
 .kontakte{
@@ -257,27 +282,30 @@ dl dd{
     padding: 5px;
 }
 
-.grid-container {
+.grid-container{
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: repeat(4, minmax(0, auto));
     padding: 10px;
 }
 
-.grid-item {
+.grid-item{
+    display: flex;
+    flex-direction: column;
     border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    font-size: 20px;
+    padding: 1em;
+    font-size: 1em;
+    text-align: center;
+    overflow-wrap: anywhere;
+    text-overflow: ellipsis;
 }
 
 .grid-item1{
     display: flex;
     border: 1px solid rgba(0, 0, 0, 0.8);
     padding: 20px;
-    font-size: 20px;
+    font-size: 1em;
     align-items: center;
     justify-items: center;
-    
-
 }
 
   @media only screen and (max-width: 750px) {
@@ -285,4 +313,8 @@ dl dd{
     background-color: grey;
   }
 }
+
+
+
 /*slutt på CMS*/
+
